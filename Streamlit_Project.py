@@ -230,8 +230,8 @@ def compute_hotspot_analysis(data):
     return state_crime_data, national_avg
 
 def open_html_file():
-    html_file_path = os.path.abspath("us_violent_crimes_map.html")
-    webbrowser.open(f"file:///{html_file_path}")
+    url = "https://github.com/notabdshahid/Crime_Analysis/blob/main/us_violent_crimes_map.html"
+    webbrowser.open(url)
 # Load Data and Precompute Everything
 file_path = 'crimedata.csv'
 # shapefile_path = 'C:\Users\Abdullah\Desktop\BTU\Sem 4\Data Exploration\Project\ne_110m_admin_1_states_provinces.shp'
@@ -333,17 +333,16 @@ elif choice == "Hotspot Analysis":
     # Create a markdown link
     # if st.link_button("Click here to open externally"):
     #     open_html_file()
-    col1, col2 = st.columns([5, 4])
-    with col1:
-        st.write('Interactive map of state-level crime')
-    with col2:
-        if st.button("(open externally)", type="secondary"):
-            file_path = os.path.abspath("us_violent_crimes_map.html")
-            webbrowser.open(f"file:///{file_path}")
-    path_to_html = "us_violent_crimes_map.html"
-    with open(path_to_html, "r") as f:
-        html_data = f.read()
-    st.components.v1.html(html_data, height = 500 , width = 1000)
+    # col1, col2 = st.columns([5, 4])
+    # with col1:
+    #     st.write('Interactive map of state-level crime')
+    # with col2:
+    #     if st.button("(open externally)", type="secondary"):
+    #         open_html_file()
+    # path_to_html = "us_violent_crimes_map.html"
+    # with open(path_to_html, "r") as f:
+    #     html_data = f.read()
+    # st.components.v1.html(html_data, height = 500 , width = 1000)
     st.markdown("---")
     st.subheader("State by State Comparison")
     imputed_data = prepare_raw_data_with_imputation(file_path)
