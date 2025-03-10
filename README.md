@@ -62,5 +62,4 @@ The combined results from feature importance, correlation analysis, perturbation
 3.	States with lower crime rates demonstrate that socio-economic stability, education, and access to resources play a pivotal role in maintaining public safety. The interactive dashboard can be used to generate visualisations dynamically on a state-by-state basis so policy makers can compare the most important features in areas with low crime and areas with high crime. This comparison could further lead them to more insights on what policies could be implemented to fix the issue of high crime. 
 These findings provide a foundation for future research and policy-making, aimed at reducing violent crime through data-driven, targeted strategies.
 ##
-# Usage
 
